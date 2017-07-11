@@ -18,6 +18,7 @@ $(document).ready(function ($) {
 
     $('#graphic').click(function () {
       $(this).fadeToggle('fast',function(){
+        $('img',this).toggle();
         graphicDetail = $('p', this).replaceWith(graphicDetail); //What the fuck
         $(this).toggleClass('expand');
       });
@@ -29,6 +30,7 @@ $(document).ready(function ($) {
 
     $('#photoshoot').click(function () {
       $(this).fadeToggle('fast',function(){
+        $('img',this).toggle();
         photoshootDetail = $('p', this).replaceWith(photoshootDetail); //What the fuck
         $(this).toggleClass('expand');
       });
@@ -40,6 +42,7 @@ $(document).ready(function ($) {
 
     $('#production').click(function () {
       $(this).fadeToggle('fast',function(){
+        $('img',this).toggle();
         productionDetail = $('p', this).replaceWith(productionDetail); //What the fuck
         $(this).toggleClass('expand');
       });
@@ -51,6 +54,7 @@ $(document).ready(function ($) {
 
     $('#social').click(function () {
       $(this).fadeToggle('fast',function(){
+        $('img',this).toggle();
         socialDetail = $('p', this).replaceWith(socialDetail); //What the fuck
         $(this).toggleClass('expand');
       });
@@ -62,6 +66,7 @@ $(document).ready(function ($) {
 
     $('#personal').click(function () {
       $(this).fadeToggle('fast',function(){
+        $('img',this).toggle();
         personalDetail = $('p', this).replaceWith(personalDetail); //What the fuck
         $(this).toggleClass('expand');
       });
