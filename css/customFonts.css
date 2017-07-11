@@ -1,0 +1,35 @@
+/*FONTS*/
+@font-face {
+  font-family:'Bk';
+  src: url('ITCAvantGardeStd-Bk.otf') format('opentype');
+  /*src:url('ITCAvantGardeStd-Bk.eot'),
+      url('ITCAvantGardeStd-Bk.eot?'), format('☺︎')
+      url('ITCAvantGardeStd-Bk.woff'), format('woff')
+      url('ITCAvantGardeStd-Bk.tff'), format('truetype');
+  font-weight: normal;
+  font-style: normal;*/
+}
+@font-face {
+  font-family:'Demi';
+  src: url('ITCAvantGardeStd-Demi.otf') format('opentype');
+}
+@font-face {
+  font-family:'Md';
+  src: url('ITCAvantGardeStd-Md.otf') format('opentype');
+}
+@font-face {
+  font-family:'XLt';
+  src: url('ITCAvantGardeStd-XLt.otf') format('opentype');
+}
+body{
+  font-family: 'Bk', 'Demi', 'Md', 'XLt';
+}
+h2{
+  font-family: 'Bk';
+}
+p{
+  font-family: 'Md';
+}
+li a{
+  font-family: 'Bk';
+}

@@ -1,0 +1,196 @@
+.container{
+  width:100%;
+  margin-left: 23px; margin-right: 23px;
+  overflow: hidden;
+}
+header{
+  padding-top: 30px;
+  min-height: 70px;
+}
+body{
+  background: radial-gradient(ellipse at center, #f9fcff 20%,#f9fcff 81%);
+  margin:0;padding:0;
+}
+h2{
+  margin:auto;padding:5px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+li{
+  text-decoration: none;
+}
+
+footer{
+  background: black;
+  color: white;
+  text-align: right;
+  padding-right: 5px;
+}
+section{
+  margin-top:50px;
+}
+/*EOF GLOBALS*/
+
+header img{
+  margin:0;
+  float:left;
+}
+/*Links on top of page,
+TO DO:
+Jump sections to rest of page*/
+#quick-link{
+  margin-top: 55px;
+  margin-right:20px;
+  float:right;
+}
+#quick-link nav{
+
+}
+#quick-link ul{
+margin:0;  padding:0;
+}
+#quick-link li{
+  padding: 0 10px;
+  font-size: 25px;
+  float:left;
+  display: inline;
+}
+#quick-link li a{
+  text-decoration: none;
+}
+/* SERVICES */
+#boxes{
+  float:left;
+  width:100%;
+  padding:0;
+}
+
+.box{
+  float:left;
+  width: 20%;
+  padding:0;
+  text-align: center;
+}
+
+.box p{
+  font-size:15px;
+}
+.box img{
+  padding:5px;
+}
+
+    /*EXPANDED SERVICES*/
+.expand{
+  position:relative;
+  background: pink;
+}
+
+/*PORTFOLIO*/
+#collage{
+  float:left;
+  width:100%;
+  padding:0;
+}
+
+.collage-box{
+  float: left;
+  width:25%;
+  max-width: 100%;
+  text-align: center;
+}
+
+/*ABOUT US*/
+#about{
+
+  margin:auto;
+  width: 60%;
+  margin-top: 50px;
+}
+video .controls{
+  object-fit: fill;
+}
+/*TEAM*/
+#team{
+  width: 100%;
+}
+
+#bio{
+  float: left;
+  margin:auto;
+  width: 100%;
+  padding:0;
+}
+
+.employee{
+  margin: auto;
+  float:left;
+  width:33.3%;
+  padding:5px;
+  text-align: center;
+}
+.employee img{
+  position: relative;
+  height:100%;
+}
+.employee.expand p{
+  position: absolute;
+  top: 10px;
+}
+/*CONTACT US*/
+#contactUs .container{
+  padding: 0;
+  width:100%;
+  background:#cc1075;
+}
+
+#contact{
+  margin: auto;
+  width:30%;
+}
+#contact , h2 p{
+  text-align:center;
+  color:white;
+}
+
+/*MEDIA QUERIES*/
+@media(max-width:768px){
+  .container{
+    padding:0; margin:0;
+  }
+  section,
+  header img,
+  #quick-link,
+  #services .box,
+  #portfolio .collage-box,
+  #about,
+  #team .employee,
+  #contactUs #contact
+  {
+    margin:0;
+    padding:0;
+    float:none;
+    text-align: center;
+    width: 100%;
+  }
+  #quick-link li
+  {
+    margin-top:5px;
+    text-align: center;
+    width: 100%;
+  }
+  #banner img{
+    float:none;
+    text-align: center;
+    width:100%;
+    height:300px;
+  }
+  #portfolio .collage-box{
+    width: 50%;
+    float: left;
+  }
+  #about #summary{
+    margin: auto;
+    width: 100%;
+  }
+}
+/*EOF QUERIES*/
