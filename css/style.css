@@ -86,22 +86,53 @@ margin:0;  padding:0;
 }
 
 /*PORTFOLIO*/
-#collage{
-  float:left;
+
+#portfolio{
   width:100%;
-  padding:0;
+  margin: auto;
+}
+.slider-outer{
+  margin-left: 26%;
+}
+.slider-inner{
+	width:500px;
+	height:300px;
+	position:relative;
+	overflow:hidden;
+	float:left;
+	padding:3px;
+	border:#666 solid 1px;
 }
 
-.collage-box{
-  float: left;
-  width:25%;
-  max-width: 100%;
-  text-align: center;
+.slider-inner img{
+	display:none;
+	width:500px;
+	height:300px;
 }
 
+.slider-inner img.active{
+	display:inline-block;
+}
+
+.prev,.next{
+	float:left;
+	margin-top:130px;
+	cursor: pointer;
+}
+
+.prev{
+	position:relative;
+	margin-right:-45px;
+	z-index:100;
+}
+
+.next{
+	position:relative;
+	margin-left:-45px;
+	z-index:100;
+}
 /*ABOUT US*/
 #about{
-
   margin:auto;
   width: 60%;
   margin-top: 50px;
@@ -161,7 +192,6 @@ video .controls{
   header img,
   #quick-link,
   #services .box,
-  #portfolio .collage-box,
   #about,
   #team .employee,
   #contactUs #contact
@@ -184,9 +214,9 @@ video .controls{
     width:100%;
     height:300px;
   }
-  #portfolio .collage-box{
-    width: 50%;
-    float: left;
+  .slider-outer{
+    margin:auto;
+    display: block;
   }
   #about #summary{
     margin: auto;
