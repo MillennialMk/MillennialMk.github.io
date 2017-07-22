@@ -8,7 +8,7 @@ header{
   min-height: 70px;
 }
 body{
-  background: radial-gradient(ellipse at center, #f9fcff 20%,#f9fcff 81%);
+  background: white;
   margin:0;padding:0;
 }
 h2{
@@ -19,20 +19,28 @@ h2{
 li{
   text-decoration: none;
 }
-
+li a{
+  text-decoration: none;
+  color:black;
+}
 footer{
+  clear:both;
+  vertical-align: center;
+  line-height: normal;
+  bottom:0px;
+  width:100%;
   background: black;
   color: white;
   text-align: right;
   padding-right: 5px;
 }
 section{
-  margin-top:50px;
+  margin-top:100px;
 }
 /*EOF GLOBALS*/
 
 header img{
-  margin:0;
+  padding-left: 50px;
   float:left;
 }
 /*Links on top of page,
@@ -56,8 +64,11 @@ margin:0;  padding:0;
   display: inline;
 }
 #quick-link li a{
+  color: black;
   text-decoration: none;
 }
+/*BANNER*/
+
 /* SERVICES */
 #boxes{
   float:left;
@@ -68,15 +79,17 @@ margin:0;  padding:0;
 .box{
   float:left;
   width: 20%;
-  padding:0;
+  padding:0 5px;
   text-align: center;
 }
 
-.box p{
+#boxes a p{
+  text-decoration: none;
+  color:black;
   font-size:15px;
 }
 .box img{
-  padding:5px;
+  padding: 5px;
 }
 
     /*EXPANDED SERVICES*/
@@ -86,56 +99,114 @@ margin:0;  padding:0;
 }
 
 /*PORTFOLIO*/
-
-#portfolio{
-  width:100%;
-  margin: auto;
+.rslides-container{
+  margin: 0 auto;
+  position: relative;
+  float: left;
+  width: 100%;
 }
-.slider-outer{
-  margin-left: 26%;
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
 }
-.slider-inner{
-	width:500px;
-	height:300px;
-	position:relative;
-	overflow:hidden;
-	float:left;
-	padding:3px;
-	border:#666 solid 1px;
+.rslides ul{
+  margin: 0;
+  padding: 0;
 }
-
-.slider-inner img{
-	display:none;
-	width:500px;
-	height:300px;
-}
-
-.slider-inner img.active{
-	display:inline-block;
-}
-
-.prev,.next{
-	float:left;
-	margin-top:130px;
-	cursor: pointer;
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
 }
 
-.prev{
-	position:relative;
-	margin-right:-45px;
-	z-index:100;
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
 }
 
-.next{
-	position:relative;
-	margin-left:-45px;
-	z-index:100;
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
 }
+
+.large-btns_nav {
+  z-index: 3;
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  opacity: 0.6;
+  text-indent: -9999px;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: #000 url("../img/themes.gif") no-repeat left 50%;
+  width: 38px;
+  }
+
+.large-btns_nav:active {
+  opacity: 1.0;
+  }
+
+.large-btns_nav.next {
+  left: auto;
+  background-position: right 50%;
+  right: 0;
+  }
+
+.large-btns_nav:focus {
+  outline: none;
+  }
+
+.large-btns_tabs {
+  margin-top: 10px;
+  text-align: center;
+  }
+
+.large-btns_tabs li {
+  display: inline;
+  float: none;
+  _float: left;
+  *float: left;
+  }
+
+.large-btns_tabs a {
+  text-indent: -9999px;
+  overflow: hidden;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  background: #ccc;
+  background: rgba(0,0,0, .2);
+  display: inline-block;
+  _display: block;
+  *display: block;
+  -webkit-box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
+  -moz-box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
+  box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
+  width: 9px;
+  height: 9px;
+  }
+
+.large-btns_here a {
+  background: #222;
+  background: rgba(0,0,0, .8);
+  }
 /*ABOUT US*/
 #about{
   margin:auto;
   width: 60%;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 video .controls{
   object-fit: fill;
@@ -192,6 +263,7 @@ video .controls{
   header img,
   #quick-link,
   #services .box,
+  #portfolio,
   #about,
   #team .employee,
   #contactUs #contact
@@ -212,15 +284,16 @@ video .controls{
     float:none;
     text-align: center;
     width:100%;
-    height:300px;
+    height:200px;
   }
-  .slider-outer{
-    margin:auto;
-    display: block;
-  }
+
   #about #summary{
     margin: auto;
     width: 100%;
+  }
+  footer{
+    text-align: center;
+    font-size: 12px;
   }
 }
 /*EOF QUERIES*/
