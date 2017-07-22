@@ -3,6 +3,9 @@
   margin-left: 23px; margin-right: 23px;
   overflow: hidden;
 }
+html,body{
+  letter-spacing: 5px;
+}
 header{
   padding-top: 30px;
   min-height: 70px;
@@ -242,7 +245,7 @@ video .controls{
 #contactUs .container{
   padding: 0;
   width:100%;
-  background:#cc1075;
+  background: -webkit-linear-gradient(top, #ff605a 0%,#ff2079 100%);
 }
 
 #contact{
@@ -295,6 +298,7 @@ video .controls{
   footer{
     text-align: center;
     font-size: 12px;
+    letter-spacing: normal;
   }
 }
 /*EOF QUERIES*/
